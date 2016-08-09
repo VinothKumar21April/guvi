@@ -6,11 +6,11 @@ int main()
   scanf("%d",&n);
   if(n%2==0)
   {
-     printf("Even number");
+     printf("even");
   }
   else
   {
-     printf("Odd number");
+     printf("odd");
   }
   return 0;
 }
