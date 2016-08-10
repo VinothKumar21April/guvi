@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-  int arr[10];
+  int arr[10],i,n,r=0;
   printf("Enter how many numbers");
   scanf("%d",&n);
   printf("Enter the numbers");
@@ -16,8 +16,13 @@ int main()
     if(arr[i]==arr[j])
     {
       printf(("%d",arr[j]);
+      r=1;
     }
    }
+  }
+  if(r==0)
+  {
+    printf("nothing");    
   }
   return 0;
 }
