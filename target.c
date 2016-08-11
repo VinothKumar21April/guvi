@@ -21,11 +21,10 @@ int main()
         r=1;
       }
     }
-   }
-   if(r==0)
-   {
-     printf("No two numbers will be added to give the target sum");
-   }
-   }
-   return 0;
+  }
+  if(r==0)
+  {
+    printf("No two numbers will be added to give the target sum");
+  }
+  return 0;
 }
