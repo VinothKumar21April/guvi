@@ -4,9 +4,9 @@ int main()
   int arr[10],i,n,j,temp;
   printf("Enter a number");
   scanf("%d",&n);
-  if(n==1)
+  if(n<0)
   {
-    printf("The given number is minimum");
+    printf("The number should not be negative");
   }
   i=0;
   while(n>0)
