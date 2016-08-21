@@ -22,6 +22,10 @@ int main()
   printf("The 4th tallest person is %d",arr[3]);
   printf("Enter k value");
   scanf("%d",&k);
+  if(k<0&&k>50)
+  {
+    printf("k value must be less than or equal to 50");
+  }
   printf("The Kth tallest person is %d",arr[k-1]);
   return 0;
 }
