@@ -1,0 +1,70 @@
+<html>
+  <head>
+  <script>
+    function ktopfn()
+    {
+      var x=document.getElementById("kilo").value;
+      var a=parseInt(document.getElementById("kilo").value);
+      if(x=="")
+      {    
+      var a=parseInt(document.getElementById("pound").value);
+      document.getElementById("kilo").value=a*0.4535;
+      }
+      else
+      {
+         document.getElementById("pound").value=a*2.2
+      } 
+    }
+    function mtoyfn()
+    {
+      alert("hi");
+      var x=document.getElementById("meters").value;
+      alert(x);
+      var a=parseInt(document.getElementById("meters").value);
+      if(x=="")
+      {
+        var a=parseInt(document.getElementById("yards").value);
+        document.getElementById("meters").value=a*0.914;
+      }
+      else
+      {
+        document.getElementById("yards").value=a*1.09361;
+      }
+    }
+    function ctoffn()
+    {
+      var x=document.getElementById("celsius").value;
+      var a=parseInt(document.getElementById("celsius").value);
+      if(x=="")
+      {
+        var a=parseInt(document.getElementById("fahrenheit").value);
+        document.getElementById("celsius").value=(a-32)/1.8;
+      }
+      else
+      { 
+        document.getElementById("fahrenheit").value=a*1.8+32;
+      }
+    }
+  </script>
+  </head>
+  <body>
+  <h1>*****SIMPLE UNIT CONVERSION*****</h1>
+  <h3>
+    
+    KILO<input type="text" id="kilo"/><br/><br/>
+    POUNDS<input type="text" id="pound"/>
+    <br/><br/><br/>
+    <input type="button" value="SUBMIT" onclick="ktopfn()"/>
+    <br/><br/>
+    <br/>
+    METRES<input type="text" id="meters"/><br/><br/>
+    YARDS<input type="text" id="yards"/>
+    <br/><br/><br/>
+    <input type="button" value="SUBMIT" name="mtoy" onclick="mtoyfn()"/>
+    <br/><br/><br/>
+    CELSIUS<input type="text" id="celsius"/><br/><br/>
+    FAHRENHEIT<input type="text" id="fahrenheit"/>
+    <br/><br/><br/>
+    <input type="button" value="SUBMIT" name="ctof" onclick="ctoffn()"/> 
+  </h3>   
+  </body>
