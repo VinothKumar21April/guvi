@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>
+    Simple Calculator
+    </title>
+    <script>
+      var cnt=0;
+      function addfunc()
+      {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=a+b;
+        document.getElementById("c").value=c;
+      }
+      function subfunc()
+      {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=a-b;
+        document.getElementById("c").value=c;
+      }
+      function mulfunc()
+      {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=a*b;
+        document.getElementById("c").value=c;
+      }
+      function divfunc()
+      {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=a/b;
+        document.getElementById("c").value=c;
+      }
+      function insert(obj)
+      {
+        var a=obj.value;
+        if(cnt==0)
+        {
+        document.getElementById("a").value=a;
+        cnt++;
+        }
+        else
+        {
+        document.getElementById("b").value=a;
+        cnt=0;
+        }
+      }         
+    </script>
+  </head>
+  <body>
+    <h1>
+          SIMPLE CALCULATOR
+    </h1>
+    <form>
+      A <input type="text" id="a">
+      B <input type="text" id="b"><br/><br/>
+      C <input type="text" id="c"><br/>
+      <input type="button" id="0" value="0" onclick="insert(this)">
+      <input type="button" id="1" value="1" onclick="insert(this)">
+      <input type="button" id="2" value="2" onclick="insert(this)"><br/>
+      <input type="button" id="3" value="3" onclick="insert(this)">
+      <input type="button" id="4" value="4" onclick="insert(this)">
+      <input type="button" id="5" value="5" onclick="insert(this)"><br/>
+      <input type="button" id="6" value="6" onclick="insert(this)">
+      <input type="button" id="7" value="7" onclick="insert(this)">
+      <input type="button" id="8" value="8" onclick="insert(this)"><br/>
+      <input type="button" id="9" value="9" onclick="insert(this)"><br/>
+      <input type="button" id="add" value="ADD" onclick="addfunc()"/>
+      <input type="button" name="sub" value="SUB" onclick="subfunc()"/><br/>
+      <input type="button" name="mul" value="MUL" onclick="mulfunc()"/>
+      <input type="button" name="div" value="DIV" onclick="divfunc()"/>
+    </form>
+  </body>
+</html>
